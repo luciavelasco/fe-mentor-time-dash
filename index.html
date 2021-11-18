@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <title>Time tracking dashboard | Frontend Mentor</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <title>Time tracking dashboard | Frontend Mentor</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-<main class="bg-purple-900 min-h-screen flex flex-col items-center pt-20 space-y-10">
+<main class="text-2xl bg-purple-900 font-extralight text-white min-h-screen flex flex-col items-center pt-20 space-y-10">
 
-  <section class="rounded-lg w-5/6 bg-indigo-900">
-    <div class="rounded-lg bg-indigo-700 p-10">
-      <!--  todo: image here-->
-      <p>Report for</p>
-      <p>Jeremy Robson</p>
-    </div>
-    <div class="flex justify-evenly">
-      <a class="p-6">Daily</a>
-      <a class="p-6">Weekly</a>
-      <a class="p-6">Monthly</a>
-    </div>
-  </section>
+    <section class="rounded-lg w-5/6 bg-indigo-900">
+        <div class="rounded-lg bg-indigo-700 p-10 flex justify-between">
+            <!--  todo: image here-->
+            <img class="rounded-full h-14 w-14" src="images/image-jeremy.png" alt="work icon"/>
+            <div>
+                <p class="text-lg font-normal text-gray-400">Report for</p>
+                <p class="text-3xl">Jeremy Robson</p>
+            </div>
+        </div>
+        <div class="flex justify-evenly">
+            <a class="p-6 text-gray-400 hover:text-white">Daily</a>
+            <a class="p-6">Weekly</a>
+            <a class="p-6 text-gray-400 hover:text-white">Monthly</a>
+        </div>
+    </section>
 
-  <section class="rounded-lg w-5/6 bg-yellow-600">
-    <img src="images/icon-work.svg" alt="work icon"/>
-    <div class="rounded-lg bg-indigo-900">
-      <h2>Work</h2>
-      <p>5hrs <!-- daily --></p>
-      <p>Yesterday - 7hrs</p> <!-- daily -->
-    </div>
-    <!--        32hrs &lt;!&ndash; weekly &ndash;&gt;-->
-    <!--        Previous - 36hrs &lt;!&ndash; weekly &ndash;&gt;-->
-    <!--        103hrs &lt;!&ndash; monthly &ndash;&gt;-->
-    <!--        Previous - 128hrs &lt;!&ndash; monthly &ndash;&gt;-->
-    <!--    </section>-->
+    <section class="rounded-lg w-5/6 bg-yellow-500 p-0 pt-12 relative">
+        <img class="absolute top-0 right-0 z-0" src="images/icon-work.svg" alt="work icon"/>
+        <div class="relative flex p-10 z-10 justify-between rounded-lg bg-indigo-900">
+            <!--      TODO: Icon -->
+            <div class="flex flex-col justify-end">
+                <h2 class="font-semibold">Work</h2>
+                <p class="text-3xl">5hrs <!-- daily --></p>
+            </div>
+            <div class="flex flex-col justify-between">
+                <div class="text-right">...</div>
+                <p class="text-gray-400 font-light">Yesterday - 7hrs</p> <!-- daily -->
+            </div>
+        </div>
+        <!--        32hrs &lt;!&ndash; weekly &ndash;&gt;-->
+        <!--        Previous - 36hrs &lt;!&ndash; weekly &ndash;&gt;-->
+        <!--        103hrs &lt;!&ndash; monthly &ndash;&gt;-->
+        <!--        Previous - 128hrs &lt;!&ndash; monthly &ndash;&gt;-->
+    </section>
+
     <!--    <section>-->
     <!--        <h2>Play</h2>-->
     <!--        <p>1hr &lt;!&ndash; daily &ndash;&gt;</p>-->
