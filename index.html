@@ -8,7 +8,8 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-<main class="text-2xl bg-purple-900 font-extralight text-white min-h-screen flex flex-col items-center pt-20 space-y-10">
+<main class="text-2xl bg-gray-900 font-extralight text-white min-h-screen flex flex-col items-center py-10 gap-y-10
+        md:items-start xl:items-center md:flex-row md:h-max md:justify-around">
 
     <section class="rounded-lg w-5/6 bg-indigo-900
         md:w-96 md:m-4">
@@ -26,139 +27,143 @@
             <a class="pt-6 pb-6 md:pt-2 md:pb-2 text-gray-400 hover:text-white">Monthly</a>
         </div>
     </section>
-    
 
-    <section class="rounded-lg overflow-hidden w-5/6 bg-yellow-500 p-0 pt-14 relative
+
+    <div class="flex flex-wrap justify-around self-stretch items-center content-center gap-y-10 md:gap-y-4"
+         style="max-width: 76rem;">
+
+        <section class="rounded-lg overflow-hidden w-5/6 bg-yellow-500 p-0 pt-14 relative
         md:w-80 md:h-72">
-        <img class="absolute -top-2 right-0" src="images/icon-work.svg" alt="work icon"/>
-        <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
+            <img class="absolute -top-2 right-0" src="images/icon-work.svg" alt="work icon"/>
+            <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
                 md:py-10 md:justify-start md:h-full">
-            <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
-                <div class="flex justify-between w-full md:self-stretch">
-                    <h2 class="font-semibold  md:text-base md:pb-6">Work</h2>
-                    <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
+                    <div class="flex justify-between w-full md:self-stretch">
+                        <h2 class="font-semibold  md:text-base md:pb-6">Work</h2>
+                        <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                    </div>
+                    <p class="text-3xl  md:text-7xl">5hrs <!-- daily --></p>
+                    <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 7hrs</p>
+                    <!-- daily -->
                 </div>
-                <p class="text-3xl  md:text-7xl">5hrs <!-- daily --></p>
-                <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 7hrs</p>
-                <!-- daily -->
             </div>
-        </div>
-    </section>
+        </section>
 
-            <!--                32hrs  weekly -->
-            <!--                Previous - 36hrs  weekly -->
-            <!--                103hrs  monthly -->
-            <!--                Previous - 128hrs  monthly -->
+        <!--                32hrs  weekly -->
+        <!--                Previous - 36hrs  weekly -->
+        <!--                103hrs  monthly -->
+        <!--                Previous - 128hrs  monthly -->
 
-    <section class="rounded-lg overflow-hidden w-5/6 bg-blue-300 p-0 pt-14 relative
+        <section class="rounded-lg overflow-hidden w-5/6 bg-blue-300 p-0 pt-14 relative
         md:w-80 md:h-72">
-        <img class="absolute -top-2 right-0" src="images/icon-play.svg" alt="work icon"/>
-        <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
+            <img class="absolute -top-2 right-0" src="images/icon-play.svg" alt="work icon"/>
+            <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
                 md:py-10 md:justify-start md:h-full">
-            <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
-                <div class="flex justify-between w-full md:self-stretch">
-                    <h2 class="font-semibold  md:text-base md:pb-6">Play </h2>
-                    <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
+                    <div class="flex justify-between w-full md:self-stretch">
+                        <h2 class="font-semibold  md:text-base md:pb-6">Play </h2>
+                        <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                    </div>
+                    <p class="text-3xl  md:text-7xl">1hr <!-- daily--></p>
+                    <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 2hrs</p>
+                    <!-- daily -->
                 </div>
-                <p class="text-3xl  md:text-7xl">1hr <!-- daily--></p>
-                <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 2hrs</p>
-                <!-- daily -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--        10hrs  weekly -->
-    <!--        Previous - 8hrs  weekly -->
-    <!--        23hrs  monthly -->
-    <!--        Previous - 29hrs  monthly -->
+        <!--        10hrs  weekly -->
+        <!--        Previous - 8hrs  weekly -->
+        <!--        23hrs  monthly -->
+        <!--        Previous - 29hrs  monthly -->
 
-    <section class="rounded-lg overflow-hidden w-5/6 bg-pink-400 p-0 pt-14 relative
+        <section class="rounded-lg overflow-hidden w-5/6 bg-pink-400 p-0 pt-14 relative
         md:w-80 md:h-72">
-        <img class="absolute -top-2 right-0" src="images/icon-study.svg" alt="work icon"/>
-        <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
+            <img class="absolute -top-2 right-0" src="images/icon-study.svg" alt="work icon"/>
+            <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
                 md:py-10 md:justify-start md:h-full">
-            <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
-                <div class="flex justify-between w-full md:self-stretch">
-                    <h2 class="font-semibold  md:text-base md:pb-6">Study </h2>
-                    <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
+                    <div class="flex justify-between w-full md:self-stretch">
+                        <h2 class="font-semibold  md:text-base md:pb-6">Study </h2>
+                        <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                    </div>
+                    <p class="text-3xl  md:text-7xl">0hrs <!-- daily--></p>
+                    <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 1hr</p>
+                    <!-- daily -->
                 </div>
-                <p class="text-3xl  md:text-7xl">0hrs <!-- daily--></p>
-                <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 1hr</p>
-                <!-- daily -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--        4hrs  weekly -->
-    <!--        Previous - 7hrs  weekly -->
-    <!--        13hrs  monthly -->
-    <!--        Previous - 19hrs  monthly -->
+        <!--        4hrs  weekly -->
+        <!--        Previous - 7hrs  weekly -->
+        <!--        13hrs  monthly -->
+        <!--        Previous - 19hrs  monthly -->
 
-    <section class="rounded-lg overflow-hidden w-5/6 bg-green-400 p-0 pt-14 relative
+        <section class="rounded-lg overflow-hidden w-5/6 bg-green-400 p-0 pt-14 relative
         md:w-80 md:h-72">
-        <img class="absolute -top-2 right-0" src="images/icon-exercise.svg" alt="work icon"/>
-        <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
+            <img class="absolute -top-2 right-0" src="images/icon-exercise.svg" alt="work icon"/>
+            <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
                 md:py-10 md:justify-start md:h-full">
-            <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
-                <div class="flex justify-between w-full md:self-stretch">
-                    <h2 class="font-semibold  md:text-base md:pb-6">Exercise </h2>
-                    <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
+                    <div class="flex justify-between w-full md:self-stretch">
+                        <h2 class="font-semibold  md:text-base md:pb-6">Exercise </h2>
+                        <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                    </div>
+                    <p class="text-3xl  md:text-7xl">1hr <!-- daily--></p>
+                    <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 1hr</p>
+                    <!-- daily -->
                 </div>
-                <p class="text-3xl  md:text-7xl">1hr <!-- daily--></p>
-                <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 1hr</p>
-                <!-- daily -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--        4hrs  weekly -->
-    <!--        Previous - 5hrs  weekly -->
-    <!--        11hrs  monthly -->
-    <!--        Previous - 18hrs  monthly -->
+        <!--        4hrs  weekly -->
+        <!--        Previous - 5hrs  weekly -->
+        <!--        11hrs  monthly -->
+        <!--        Previous - 18hrs  monthly -->
 
-    <section class="rounded-lg overflow-hidden w-5/6 bg-purple-600 p-0 pt-14 relative
+        <section class="rounded-lg overflow-hidden w-5/6 bg-purple-600 p-0 pt-14 relative
         md:w-80 md:h-72">
-        <img class="absolute -top-2 right-0" src="images/icon-social.svg" alt="work icon"/>
-        <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
+            <img class="absolute -top-2 right-0" src="images/icon-social.svg" alt="work icon"/>
+            <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
                 md:py-10 md:justify-start md:h-full">
-            <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
-                <div class="flex justify-between w-full md:self-stretch">
-                    <h2 class="font-semibold  md:text-base md:pb-6">Social </h2>
-                    <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
+                    <div class="flex justify-between w-full md:self-stretch">
+                        <h2 class="font-semibold  md:text-base md:pb-6">Social </h2>
+                        <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                    </div>
+                    <p class="text-3xl  md:text-7xl">1hr <!-- daily--></p>
+                    <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 3hrs</p>
+                    <!-- daily -->
                 </div>
-                <p class="text-3xl  md:text-7xl">1hr <!-- daily--></p>
-                <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 3hrs</p>
-                <!-- daily -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--        5hrs  weekly -->
-    <!--        Previous - 10hrs  weekly -->
-    <!--        21hrs  monthly -->
-    <!--        Previous - 23hrs  monthly -->
+        <!--        5hrs  weekly -->
+        <!--        Previous - 10hrs  weekly -->
+        <!--        21hrs  monthly -->
+        <!--        Previous - 23hrs  monthly -->
 
-    <section class="rounded-lg overflow-hidden w-5/6 bg-yellow-300 p-0 pt-14 relative
+        <section class="rounded-lg overflow-hidden w-5/6 bg-yellow-300 p-0 pt-14 relative
         md:w-80 md:h-72">
-        <img class="absolute -top-2 right-0" src="images/icon-self-care.svg" alt="work icon"/>
-        <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
+            <img class="absolute -top-2 right-0" src="images/icon-self-care.svg" alt="work icon"/>
+            <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
                 md:py-10 md:justify-start md:h-full">
-            <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
-                <div class="flex justify-between w-full md:self-stretch">
-                    <h2 class="font-semibold  md:text-base md:pb-6">Self Care </h2>
-                    <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
+                    <div class="flex justify-between w-full md:self-stretch">
+                        <h2 class="font-semibold  md:text-base md:pb-6">Self Care </h2>
+                        <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                    </div>
+                    <p class="text-3xl  md:text-7xl">0hrs <!-- daily--></p>
+                    <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 1hr</p>
+                    <!-- daily -->
                 </div>
-                <p class="text-3xl  md:text-7xl">0hrs <!-- daily--></p>
-                <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 1hr</p>
-                <!-- daily -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--        2hrs  weekly -->
-    <!--        Previous - 2hrs  weekly -->
-    <!--        7hrs  monthly -->
-    <!--        Previous - 11hrs  monthly -->
+        <!--        2hrs  weekly -->
+        <!--        Previous - 2hrs  weekly -->
+        <!--        7hrs  monthly -->
+        <!--        Previous - 11hrs  monthly -->
+    </div>
 </main>
 </body>
 </html>
