@@ -10,89 +10,45 @@
 <body>
 <main class="text-2xl bg-purple-900 font-extralight text-white min-h-screen flex flex-col items-center pt-20 space-y-10">
 
-    <section class="rounded-lg w-5/6 bg-indigo-900">
-        <div class="rounded-lg bg-indigo-700 pt-10 pb-10 flex justify-evenly">
+    <section class="rounded-lg w-5/6 bg-indigo-900
+        md:w-96 md:m-4">
+        <div class="rounded-lg bg-indigo-700 pt-10 pb-10 flex justify-evenly
+         md:p-10 md:h-96 md:flex-col">
             <img class="border-white border-4 rounded-full h-16 w-16" src="images/image-jeremy.png" alt="Jeremy"/>
-            <div>
+            <div class="md:w-min">
                 <p class="text-lg font-normal text-gray-400">Report for</p>
-                <p class="text-3xl">Jeremy Robson</p>
+                <p class="text-3xl md:text-4xl">Jeremy Robson</p>
             </div>
         </div>
-        <div class="flex justify-evenly">
-            <a class="pt-6 pb-6 text-gray-400 hover:text-white">Daily</a>
-            <a class="pt-6 pb-6">Weekly</a>
-            <a class="pt-6 pb-6 text-gray-400 hover:text-white">Monthly</a>
+        <div class="md:p-10 flex md:text-lg md:font-light md:flex-col justify-evenly">
+            <a class="pt-6 pb-6 md:pt-2 md:pb-2 text-gray-400 hover:text-white">Daily</a>
+            <a class="pt-6 pb-6 md:pt-2 md:pb-2">Weekly</a>
+            <a class="pt-6 pb-6 md:pt-2 md:pb-2 text-gray-400 hover:text-white">Monthly</a>
         </div>
     </section>
 
-    <section class="rounded-lg w-5/6 bg-yellow-500 p-0 pt-12 relative">
-        <img class="absolute top-0 right-0" src="images/icon-work.svg" alt="work icon"/>
-        <div class="relative flex pt-10 pb-10 justify-evenly rounded-lg bg-indigo-900">
-            <div class="flex flex-col justify-end">
-                <h2 class="font-semibold">Work</h2>
-                <p class="text-3xl">5hrs <!-- daily --></p>
-            </div>
-            <div class="flex flex-col justify-around items-end">
-                <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu"/>
-                <p class="text-gray-400 font-light">Yesterday - 7hrs</p> <!-- daily -->
+
+        <div class="flex flex-wrap justify-around self-stretch items-center content-center gap-y-10 md:gap-y-4"
+             style="max-width: 76rem;">
+
+    <section class="rounded-lg overflow-hidden w-5/6 bg-yellow-500 p-0 pt-14 relative
+        md:w-80 md:h-72">
+        <img class="absolute -top-2 right-0" src="images/icon-work.svg" alt="work icon"/>
+        <div class="relative flex py-5 justify-evenly rounded-lg bg-indigo-900
+                md:py-10 md:justify-start md:h-full">
+            <div class="flex flex-wrap justify-between w-11/12   md:w-full md:flex-col md:px-10">
+                <div class="flex justify-between w-full md:self-stretch">
+                    <h2 class="font-semibold  md:text-base md:pb-6">Work</h2>
+                    <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu">
+                </div>
+                <p class="text-3xl  md:text-7xl">5hrs <!-- daily --></p>
+                <p class="text-gray-400 self-end font-light md:text-base md:self-start">Yesterday - 7hrs</p>
+                <!-- daily -->
             </div>
         </div>
-        <!--        32hrs &lt;!&ndash; weekly &ndash;&gt;-->
-        <!--        Previous - 36hrs &lt;!&ndash; weekly &ndash;&gt;-->
-        <!--        103hrs &lt;!&ndash; monthly &ndash;&gt;-->
-        <!--        Previous - 128hrs &lt;!&ndash; monthly &ndash;&gt;-->
     </section>
 
-    <!--    <section>-->
-    <!--        <h2>Play</h2>-->
-    <!--        <p>1hr &lt;!&ndash; daily &ndash;&gt;</p>-->
-    <!--        <p>Yesterday - 2hrs</p> &lt;!&ndash; daily &ndash;&gt;-->
-    <!--&lt;!&ndash;        10hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 8hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        23hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 29hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--    </section>-->
-    <!--    <section>-->
-    <!--        <h2>Study</h2>-->
-    <!--        <p>0hrs &lt;!&ndash; daily &ndash;&gt;</p>-->
-    <!--        <p>Yesterday - 1hr</p> &lt;!&ndash; daily &ndash;&gt;-->
-    <!--&lt;!&ndash;        4hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 7hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        13hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 19hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--    </section>-->
-    <!--    <section>-->
-    <!--        <h2>Exercise</h2>-->
-    <!--        <p>1hr &lt;!&ndash; daily &ndash;&gt;</p>-->
-    <!--        <p>Yesterday - 1hr</p> &lt;!&ndash; daily &ndash;&gt;-->
-    <!--&lt;!&ndash;        4hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 5hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        11hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 18hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--    </section>-->
-    <!--    <section>-->
-    <!--        <h2>Social</h2>-->
-    <!--        <p>1hr &lt;!&ndash; daily &ndash;&gt;</p>-->
-    <!--        <p>Yesterday - 3hrs</p> &lt;!&ndash; daily &ndash;&gt;-->
-    <!--&lt;!&ndash;        5hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 10hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        21hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 23hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--    </section>-->
-    <!--    <section>-->
-    <!--        <h2>Self Care</h2>-->
-    <!--        <p>0hrs &lt;!&ndash; daily &ndash;&gt;</p>-->
-    <!--        <p>Yesterday - 1hr</p> &lt;!&ndash; daily &ndash;&gt;-->
-    <!--&lt;!&ndash;        2hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 2hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        7hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 11hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--    </section>-->
-
-    <!--    <div class="attribution">-->
-    <!--        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.-->
-    <!--        Coded by <a href="#">Lucia Velasco</a>.-->
-    <!--    </div>-->
+          
 </main>
 </body>
 </html>
