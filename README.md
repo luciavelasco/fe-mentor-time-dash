@@ -1,5 +1,9 @@
 # Frontend Mentor - Time tracking dashboard
 
+Wanna view my build? Check it out [here](https://htmlpreview.github.io/?https://github.com/luciavelasco/fe-mentor-time-dash/blob/main/index.html).
+
+Want to see it like a NES-style video game? Check it out [here](https://luciavelasco.github.io/fe-mentor-time-dash/)!
+
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
