@@ -1,0 +1,52 @@
+
+.nes-container.spaced {
+  margin: 2rem;
+}
+
+.message {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.icons {
+  min-width: max-content;
+  margin-right: 1rem;
+  height: max-content;
+}
+
+
+/*main {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+
+.dashboard {
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+}
+
+.nes-container.outer {
+  /*flex-grow: 1;*/
+  padding: 0;
+  margin: 1rem;
+  /*padding-top: 3rem;*/
+}
+
+.nes-container.profile-outer {
+  padding: 0 0 3rem 0;
+  /*max-height: fit-content;*/
+}
+
+.nes-container.inner {
+  border-bottom: 0;
+}
+
+.nes-container.profile-inner {
+  margin: 0 0 3rem 0;
+  border-top: 0;
+}
+
+button:hover {
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer;
+}

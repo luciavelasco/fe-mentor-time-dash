@@ -2,97 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
-    <title>Time tracking dashboard | Frontend Mentor</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <title>Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="node_modules/nes.css/css/nes.css" type="text/css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-<main class="text-2xl bg-purple-900 font-extralight text-white min-h-screen flex flex-col items-center pt-20 space-y-10">
 
-    <section class="rounded-lg w-5/6 bg-indigo-900">
-        <div class="rounded-lg bg-indigo-700 pt-10 pb-10 flex justify-evenly">
-            <img class="border-white border-4 rounded-full h-16 w-16" src="images/image-jeremy.png" alt="Jeremy"/>
-            <div>
-                <p class="text-lg font-normal text-gray-400">Report for</p>
-                <p class="text-3xl">Jeremy Robson</p>
-            </div>
+<main class="text-white flex items-center flex-col lg:flex-row bg-amber-100 lg:p-0 lg:pl-4 min-h-screen">
+
+    <section class="nes-container is-rounded profile-outer bg-indigo-900">
+        <div class="nes-container is-rounded profile-inner bg-indigo-600 border-t-0 m-0 mt-12">
+            <i class="nes-ash m-8"></i>
+            <p class="text-xs">Report for</p>
+            <h1 class="text-2xl">Jeremy Robson</h1>
         </div>
-        <div class="flex justify-evenly">
-            <a class="pt-6 pb-6 text-gray-400 hover:text-white">Daily</a>
-            <a class="pt-6 pb-6">Weekly</a>
-            <a class="pt-6 pb-6 text-gray-400 hover:text-white">Monthly</a>
-        </div>
+        <nav class="text-violet-300">
+            <button class="text-left border-0 bg-inherit py-2 px-8 block w-full hover:text-white">Daily</button>
+            <button class="text-left border-0 bg-inherit py-2 px-8 block w-full hover:text-white text-white">Weekly</button>
+            <button class="text-left border-0 bg-inherit py-2 px-8 block w-full hover:text-white">Monthly</button>
+        </nav>
     </section>
 
-    <section class="rounded-lg w-5/6 bg-yellow-500 p-0 pt-12 relative">
-        <img class="absolute top-0 right-0" src="images/icon-work.svg" alt="work icon"/>
-        <div class="relative flex pt-10 pb-10 justify-evenly rounded-lg bg-indigo-900">
-            <div class="flex flex-col justify-end">
-                <h2 class="font-semibold">Work</h2>
-                <p class="text-3xl">5hrs <!-- daily --></p>
-            </div>
-            <div class="flex flex-col justify-around items-end">
-                <img class="h-1.5" src="images/icon-ellipsis.svg" alt="menu"/>
-                <p class="text-gray-400 font-light">Yesterday - 7hrs</p> <!-- daily -->
-            </div>
-        </div>
-        <!--        32hrs &lt;!&ndash; weekly &ndash;&gt;-->
-        <!--        Previous - 36hrs &lt;!&ndash; weekly &ndash;&gt;-->
-        <!--        103hrs &lt;!&ndash; monthly &ndash;&gt;-->
-        <!--        Previous - 128hrs &lt;!&ndash; monthly &ndash;&gt;-->
-    </section>
 
-    <!--    <section>-->
-    <!--        <h2>Play</h2>-->
-    <!--        <p>1hr &lt;!&ndash; daily &ndash;&gt;</p>-->
-    <!--        <p>Yesterday - 2hrs</p> &lt;!&ndash; daily &ndash;&gt;-->
-    <!--&lt;!&ndash;        10hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 8hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        23hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 29hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--    </section>-->
-    <!--    <section>-->
-    <!--        <h2>Study</h2>-->
-    <!--        <p>0hrs &lt;!&ndash; daily &ndash;&gt;</p>-->
-    <!--        <p>Yesterday - 1hr</p> &lt;!&ndash; daily &ndash;&gt;-->
-    <!--&lt;!&ndash;        4hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 7hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        13hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 19hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--    </section>-->
-    <!--    <section>-->
-    <!--        <h2>Exercise</h2>-->
-    <!--        <p>1hr &lt;!&ndash; daily &ndash;&gt;</p>-->
-    <!--        <p>Yesterday - 1hr</p> &lt;!&ndash; daily &ndash;&gt;-->
-    <!--&lt;!&ndash;        4hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 5hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        11hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 18hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--    </section>-->
-    <!--    <section>-->
-    <!--        <h2>Social</h2>-->
-    <!--        <p>1hr &lt;!&ndash; daily &ndash;&gt;</p>-->
-    <!--        <p>Yesterday - 3hrs</p> &lt;!&ndash; daily &ndash;&gt;-->
-    <!--&lt;!&ndash;        5hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 10hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        21hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 23hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--    </section>-->
-    <!--    <section>-->
-    <!--        <h2>Self Care</h2>-->
-    <!--        <p>0hrs &lt;!&ndash; daily &ndash;&gt;</p>-->
-    <!--        <p>Yesterday - 1hr</p> &lt;!&ndash; daily &ndash;&gt;-->
-    <!--&lt;!&ndash;        2hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 2hrs &lt;!&ndash; weekly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        7hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;        Previous - 11hrs &lt;!&ndash; monthly &ndash;&gt;&ndash;&gt;-->
-    <!--    </section>-->
-
-    <!--    <div class="attribution">-->
-    <!--        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.-->
-    <!--        Coded by <a href="#">Lucia Velasco</a>.-->
-    <!--    </div>-->
+    <div class="flex flex-col grow md:flex-row flex-wrap justify-center">
+        <section class="nes-container is-rounded outer bg-black">
+            <div class="bg-orange-400 h-12 overflow-hidden flex justify-end">
+                <img class="h-24 relative right-4 -top-3" src="images/icon-work.svg" alt="work icon"/>
+            </div>
+            <div class="nes-container is-rounded inner bg-indigo-900">
+                <div class="flex justify-between">
+                    <span>Work</span>
+                    <span>...</span>
+                </div>
+                <div class="dash-content">
+                    <p class="text-5xl py-4">32hrs</p>
+                    <p class="text-sm">Last week - 36hrs</p>
+                </div>
+            </div>
+        </section>
+        <section class="nes-container is-rounded outer bg-black">
+            <div class=" bg-cyan-500 h-12 overflow-hidden flex justify-end">
+                <img class="h-24 relative right-4 -top-3" src="images/icon-play.svg" alt="Play icon"/>
+            </div>
+            <div class="nes-container is-rounded inner bg-indigo-900">
+                <div class="flex justify-between">
+                    <span>Play</span>
+                    <span>...</span>
+                </div>
+                <div class="dash-content">
+                    <p class="text-5xl py-4">32hrs</p>
+                    <p class="text-sm">Last week - 36hrs</p>
+                </div>
+            </div>
+        </section>
+        <section class="nes-container is-rounded outer bg-black">
+            <div class=" bg-rose-400 h-12 overflow-hidden flex justify-end">
+                <img class="h-24 relative right-4 -top-3" src="images/icon-study.svg" alt="Study icon"/>
+            </div>
+            <div class="nes-container is-rounded inner bg-indigo-900">
+                <div class="flex justify-between">
+                    <span>Study</span>
+                    <span>...</span>
+                </div>
+                <div class="dash-content">
+                    <p class="text-5xl py-4">32hrs</p>
+                    <p class="text-sm">Last week - 36hrs</p>
+                </div>
+            </div>
+        </section>
+        <section class="nes-container is-rounded outer bg-black">
+            <div class=" bg-green-400 h-12 overflow-hidden flex justify-end">
+                <img class="h-24 relative right-4 -top-3" src="images/icon-exercise.svg" alt="Exercise icon"/>
+            </div>
+            <div class="nes-container is-rounded inner bg-indigo-900">
+                <div class="flex justify-between">
+                    <span>Exercise</span>
+                    <span>...</span>
+                </div>
+                <div class="dash-content">
+                    <p class="text-5xl py-4">32hrs</p>
+                    <p class="text-sm">Last week - 36hrs</p>
+                </div>
+            </div>
+        </section>
+        <section class="nes-container is-rounded outer bg-black">
+            <div class=" bg-violet-700 h-12 overflow-hidden flex justify-end">
+                <img class="h-24 relative right-4 -top-3" src="images/icon-social.svg" alt="Social icon"/>
+            </div>
+            <div class="nes-container is-rounded inner bg-indigo-900">
+                <div class="flex justify-between">
+                    <span>Social</span>
+                    <span>...</span>
+                </div>
+                <div class="dash-content">
+                    <p class="text-5xl py-4">32hrs</p>
+                    <p class="text-sm">Last week - 36hrs</p>
+                </div>
+            </div>
+        </section>
+        <section class="nes-container is-rounded outer bg-black">
+            <div class=" bg-amber-400 h-12 overflow-hidden flex justify-end">
+                <img class="h-24 relative right-4 -top-3" src="images/icon-self-care.svg" alt="Self Care icon"/>
+            </div>
+            <div class="nes-container is-rounded inner bg-indigo-900">
+                <div class="flex justify-between">
+                    <span>Self Care</span>
+                    <span>...</span>
+                </div>
+                <div class="dash-content">
+                    <p class="text-5xl py-4">32hrs</p>
+                    <p class="text-sm">Last week - 36hrs</p>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
+
+<!--<div class="spaced nes-container is-rounded with-title">-->
+<!--    <p class="title">Good morning!</p>-->
+<!--    <p>Let's put some CSS frames in some works</p>-->
+<!--</div>-->
+
+<!--<section class="spaced nes-container">-->
+<!--    <section class="message-list">-->
+<!--        <section class="message -left">-->
+<!--            <div class="icons">-->
+<!--                <i class="nes-icon github is-small"></i>-->
+<!--                <i class="nes-icon github is-medium"></i>-->
+<!--                <i class="nes-icon github is-large"></i>-->
+<!--                <i class="nes-octocat animate"></i>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Balloon &ndash;&gt;-->
+<!--            <div class="nes-balloon from-left is-dark">-->
+<!--                <p>Don't forget to put me on Github!</p>-->
+<!--            </div>-->
+<!--        </section>-->
+<!--    </section>-->
+<!--</section>-->
+<!--</section>-->
+
 </body>
-</html>
